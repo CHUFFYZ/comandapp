@@ -1,0 +1,57 @@
+body{background:var(--paper)}
+.admin-nav{background:var(--ink)}
+.admin-nav .nav-link{color:#B8C2D6;font-weight:500}
+.admin-nav .nav-link:hover,.admin-nav .nav-link.active{color:#fff}
+.admin-nav .nav-link.active{box-shadow:inset 0 -3px var(--saffron)}
+.admin-main{padding-top:2rem;padding-bottom:3rem}
+.admin-title{font-size:1.8rem;font-weight:800;margin-bottom:1.5rem}
+.panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1.5rem}
+.panel h2{font-size:1.15rem;font-weight:700;margin-bottom:1rem}
+.stat{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-left:4px solid var(--saffron);border-radius:10px;padding:1.1rem}
+.stat i{color:var(--saffron-d);font-size:1.4rem}
+.stat strong{font-family:var(--font-head);font-size:1.8rem;line-height:1.2}
+.stat span{color:var(--muted);font-size:.9rem}
+.plan-row{padding:.75rem 0;border-bottom:1px solid var(--line)}
+.plan-row:last-child{border-bottom:0}
+.form-control:focus,.form-select:focus{border-color:var(--saffron);box-shadow:0 0 0 3px rgba(242,169,0,.35)}
+
+/* Mesero */
+.prod{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:10px;padding:.75rem 1rem}
+.prod .qty{width:90px}
+.prod-agotado{opacity:.55}
+.barra-total{position:sticky;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:1rem;padding:1rem;background:#fff;border-top:3px solid var(--saffron);box-shadow:0 -6px 16px rgba(20,33,61,.08)}
+.barra-total strong{font-family:var(--font-head);font-size:1.5rem}
+/* Cocina */
+.comanda{background:#fff;border:1px solid var(--line);border-top:6px solid var(--saffron);border-radius:6px;padding:1rem;height:100%}
+.comanda-tarde{border-top-color:var(--chili)} .comanda-tarde .comanda-head span{color:var(--chili);font-weight:700}
+.comanda-head{display:flex;justify-content:space-between;border-bottom:2px dashed var(--line);padding-bottom:.5rem;margin-bottom:.5rem}
+.comanda ul{list-style:none;padding:0;margin:0 0 1rem;font-size:1.15rem}
+.comanda li{padding:.2rem 0}
+
+/* Categorías colapsables (mesero) */
+details.cat{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:.5rem}
+details.cat summary{display:flex;justify-content:space-between;align-items:center;padding:.8rem 1rem;font-weight:700;font-family:var(--font-head);cursor:pointer;list-style:none}
+details.cat summary::-webkit-details-marker{display:none}
+details.cat summary::after{content:"▾";margin-left:.75rem;color:var(--muted)}
+details.cat[open] summary::after{content:"▴"}
+details.cat summary span:first-child{flex:1}
+.resumen{list-style:none;padding:0;margin:0}
+.resumen li{display:flex;justify-content:space-between;padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.fila-mod{background:#EAF2FF}
+/* Cocina: pedido modificado */
+.comanda-mod{background:#EAF2FF;border-color:#2F6FED;border-top-color:#2F6FED;box-shadow:0 0 0 3px rgba(47,111,237,.25)}
+.comanda-tarde{border-top-color:var(--chili)}
+.aviso-mod{background:#2F6FED;color:#fff;font-weight:700;font-size:.85rem;margin:-1rem -1rem .75rem;padding:.4rem 1rem}
+
+/* Sucursales / pagos / regalos */
+.sucursal{border-left-width:6px}
+.regalo{color:var(--leaf);font-weight:700}
+.regalo-check{display:flex;align-items:center;margin-top:.4rem;padding:.5rem .75rem;background:#FFF6DD;border:1px dashed var(--saffron-d);border-radius:8px;font-weight:700}
+
+/* Notificaciones */
+.notif-menu{width:340px;max-width:92vw;max-height:70vh;overflow-y:auto}
+.notif-item{white-space:normal;padding:.6rem .9rem;border-bottom:1px solid var(--line)}
+.notif-no-leida{background:#FFF6DD}
+.notif-msg{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.regalo-check{display:block;margin-top:.4rem;padding:.6rem .9rem;background:#FFF6DD;border:1px dashed var(--saffron-d);border-radius:8px;font-weight:600}
+.regalo-check label{display:block;margin-top:.25rem;font-weight:600;cursor:pointer}
